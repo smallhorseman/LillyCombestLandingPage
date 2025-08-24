@@ -55,6 +55,7 @@ const Header = ({ smoothScroll }) => {
                     <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"/>
                     </svg>
+                    {/* Link to homepage */}
                     <a href="/" className="text-2xl font-bold text-gray-900">Lilly Combest</a>
                 </div>
                 <nav className="hidden md:block">
@@ -313,7 +314,8 @@ const ContactSection = () => {
                     <div className="mt-8 text-center text-gray-600">
                         <p>Or connect with Lilly:</p>
                         <p className="mt-2 text-lg">Email: <a href="mailto:lilly@lillycombest.com" className="text-green-600 hover:underline">lilly@lillycombest.com</a></p>
-                        <p class="text-lg">Phone: <a href="tel:+15551234567" className="text-green-600 hover:underline">(555) 123-4567</a></p>
+                        {/* UPDATED: Phone number to 832-257-9197 */}
+                        <p className="text-lg">Phone: <a href="tel:+18322579197" className="text-green-600 hover:underline">(832) 257-9197</a></p>
                     </div>
                 </div>
             </div>
@@ -335,7 +337,6 @@ const ContactSection = () => {
 
 // Footer Component
 const Footer = () => {
-    // Handler for footer link clicks
     const handleFooterLinkClick = (e) => {
         e.preventDefault(); // Prevent default link navigation
         // You can add custom logic here later, e.g., open a modal, or navigate to a placeholder route.
@@ -347,13 +348,9 @@ const Footer = () => {
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* Replaced <a> with <button> for non-navigable placeholder links to resolve ESLint errors */}
-                    <button type="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300 text-base appearance-none bg-transparent border-none p-0 cursor-pointer underline">
-                        Privacy Policy
-                    </button>
-                    <button type="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300 text-base appearance-none bg-transparent border-none p-0 cursor-pointer underline">
-                        Terms of Service
-                    </button>
+                    {/* Using href="#" with an onClick handler that prevents default navigation for placeholder links */}
+                    <a href="#" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                 </div>
             </div>
         </footer>
