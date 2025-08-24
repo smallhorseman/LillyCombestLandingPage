@@ -313,7 +313,7 @@ const ContactSection = () => {
                     <div className="mt-8 text-center text-gray-600">
                         <p>Or connect with Lilly:</p>
                         <p className="mt-2 text-lg">Email: <a href="mailto:lilly@lillycombest.com" className="text-green-600 hover:underline">lilly@lillycombest.com</a></p>
-                        <p className="text-lg">Phone: <a href="tel:+15551234567" className="text-green-600 hover:underline">(555) 123-4567</a></p>
+                        <p class="text-lg">Phone: <a href="tel:+15551234567" className="text-green-600 hover:underline">(555) 123-4567</a></p>
                     </div>
                 </div>
             </div>
@@ -335,6 +335,7 @@ const ContactSection = () => {
 
 // Footer Component
 const Footer = () => {
+    // Handler for footer link clicks
     const handleFooterLinkClick = (e) => {
         e.preventDefault(); // Prevent default link navigation
         // You can add custom logic here later, e.g., open a modal, or navigate to a placeholder route.
@@ -346,9 +347,13 @@ const Footer = () => {
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* FIXED: Changed href to "#" and added role="button" with onClick to satisfy ESLint. */}
-                    <a href="#" role="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
-                    <a href="#" role="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    {/* Replaced <a> with <button> for non-navigable placeholder links to resolve ESLint errors */}
+                    <button type="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300 text-base appearance-none bg-transparent border-none p-0 cursor-pointer underline">
+                        Privacy Policy
+                    </button>
+                    <button type="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300 text-base appearance-none bg-transparent border-none p-0 cursor-pointer underline">
+                        Terms of Service
+                    </button>
                 </div>
             </div>
         </footer>
