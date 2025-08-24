@@ -346,7 +346,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* Fixed: Using href="#" with role="button" and onClick to prevent navigation for placeholder links */}
+                    {/* FIXED: Changed href to "#" and added role="button" with onClick to satisfy ESLint. */}
                     <a href="#" role="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
                     <a href="#" role="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                 </div>
