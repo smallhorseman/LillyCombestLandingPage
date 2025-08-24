@@ -265,7 +265,7 @@ const ImageGallerySection = () => {
         { src: "https://live.staticflickr.com/65535/54741071069_fd398740ca_b.jpg", alt: "Epigenetic Tech in Action" },
         { src: "https://live.staticflickr.com/65535/54741059353_afec902d5c_b.jpg", alt: "Mindful Living" },
         { src: "https://live.staticflickr.com/65535/54741061858_a309360543_b.jpg", alt: "Nature Connection" },
-        { src: "https://live.staticflickr.com/65535/54741211905_238a89ce0c_b.jpg", alt: "Personalized Wellness Plan" }, // Your provided Flickr URL
+        { src: "https://live.staticflickr.com/65535/54741211905_238a89ce0c_b.jpg", alt: "Personalized Wellness Plan" },
         { src: "https://live.staticflickr.com/65535/54741215310_f197896b7d_o.png", alt: "Client Success Story" }, // UPDATED with your new Flickr URL
     ];
 
