@@ -13,7 +13,7 @@ function App() {
 
     return (
         // The main container for the entire application, applying global styles
-        <div className="bg-gray-50 text-gray-800 min-h-screen font-inter">
+        <div className="bg-gray-50 text-gray-800 min-h-screen font-sans">
             {/* Render the Header component */}
             <Header smoothScroll={smoothScroll} />
             <main>
@@ -44,16 +44,17 @@ const Header = ({ smoothScroll }) => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    // Closes the mobile menu and then scrolls to the selected section
     const closeMobileMenu = (id) => {
         setIsMobileMenuOpen(false);
         smoothScroll(id);
     };
 
     return (
-        <header className="bg-white shadow-sm py-4">
+        <header className="bg-white shadow-sm py-4 sticky top-0 z-40">
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center space-x-2">
-                    {/* Lilly's Logo/Icon (placeholder) */}
+                    {/* Lilly's Logo/Icon */}
                     <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"/>
                     </svg>
@@ -62,11 +63,11 @@ const Header = ({ smoothScroll }) => {
                 </div>
                 <nav className="hidden md:block">
                     <ul className="flex space-x-6">
-                        <li><a href="#about" onClick={() => smoothScroll('about')} className="text-gray-600 hover:text-green-600 transition duration-300">About</a></li>
-                        <li><a href="#services" onClick={() => smoothScroll('services')} className="text-gray-600 hover:text-green-600 transition duration-300">Services</a></li>
-                        <li><a href="#testimonials" onClick={() => smoothScroll('testimonials')} className="text-gray-600 hover:text-green-600 transition duration-300">Testimonials</a></li>
-                        <li><a href="#gallery" onClick={() => smoothScroll('gallery')} className="text-gray-600 hover:text-green-600 transition duration-300">Gallery</a></li>
-                        <li><a href="#contact" onClick={() => smoothScroll('contact')} className="text-gray-600 hover:text-green-600 transition duration-300">Contact</a></li>
+                        <li><a href="#about" onClick={(e) => { e.preventDefault(); smoothScroll('about'); }} className="text-gray-600 hover:text-green-600 transition duration-300">About</a></li>
+                        <li><a href="#services" onClick={(e) => { e.preventDefault(); smoothScroll('services'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Services</a></li>
+                        <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); smoothScroll('testimonials'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Testimonials</a></li>
+                        <li><a href="#gallery" onClick={(e) => { e.preventDefault(); smoothScroll('gallery'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Gallery</a></li>
+                        <li><a href="#contact" onClick={(e) => { e.preventDefault(); smoothScroll('contact'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Contact</a></li>
                     </ul>
                 </nav>
                 {/* Mobile Menu Button (Hamburger Icon) */}
@@ -84,11 +85,11 @@ const Header = ({ smoothScroll }) => {
                     </svg>
                 </button>
                 <ul className="text-3xl font-medium space-y-8">
-                    <li><a href="#about" onClick={() => closeMobileMenu('about')} className="text-gray-800 hover:text-green-600 transition duration-300">About</a></li>
-                    <li><a href="#services" onClick={() => closeMobileMenu('services')} className="text-gray-800 hover:text-green-600 transition duration-300">Services</a></li>
-                    <li><a href="#testimonials" onClick={() => closeMobileMenu('testimonials')} className="text-gray-800 hover:text-green-600 transition duration-300">Testimonials</a></li>
-                    <li><a href="#gallery" onClick={() => closeMobileMenu('gallery')} className="text-gray-800 hover:text-green-600 transition duration-300">Gallery</a></li>
-                    <li><a href="#contact" onClick={() => closeMobileMenu('contact')} className="text-gray-800 hover:text-green-600 transition duration-300">Contact</a></li>
+                    <li><a href="#about" onClick={(e) => { e.preventDefault(); closeMobileMenu('about'); }} className="text-gray-800 hover:text-green-600 transition duration-300">About</a></li>
+                    <li><a href="#services" onClick={(e) => { e.preventDefault(); closeMobileMenu('services'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Services</a></li>
+                    <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); closeMobileMenu('testimonials'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Testimonials</a></li>
+                    <li><a href="#gallery" onClick={(e) => { e.preventDefault(); closeMobileMenu('gallery'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Gallery</a></li>
+                    <li><a href="#contact" onClick={(e) => { e.preventDefault(); closeMobileMenu('contact'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Contact</a></li>
                 </ul>
             </div>
         </header>
@@ -115,9 +116,9 @@ const AboutSection = () => {
             <div className="container mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">About Lilly Combest</h2>
                 <div className="flex flex-col md:flex-row items-center md:space-x-8">
-                    {/* Placeholder image for About section */}
+                    {/* Image for About section updated with the provided Flickr URL */}
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <img src="https://placehold.co/400x400/81C784/FFFFFF?text=Lilly+Combest" alt="Lilly Combest - Wellness Consultant" className="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-green-500 md:w-full md:h-auto max-w-xs md:max-w-none" />
+                        <img src="https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg" alt="Lilly Combest - Wellness Consultant" className="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-green-500 md:w-full md:h-auto max-w-xs md:max-w-none" />
                     </div>
                     <div className="md:w-2/3 text-lg leading-relaxed">
                         <p className="mb-4">As a passionate <strong className="font-semibold">Wellness Consultant</strong>, Lilly Combest specializes in integrating cutting-edge <strong className="font-semibold">epigenetic technology</strong> to empower individuals on their health journeys. With years of experience and a deep understanding of how lifestyle influences gene expression, Lilly provides personalized strategies that go beyond one-size-fits-all approaches.</p>
@@ -138,7 +139,7 @@ const ServicesSection = () => {
             description: "Customized strategies based on your unique epigenetic profile, covering diet, exercise, and lifestyle.",
             icon: (
                 <svg className="h-12 w-12 text-green-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 12l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002-2h2a2 2 0 002 2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
                 </svg>
             ),
             borderColor: "border-green-500"
@@ -148,7 +149,7 @@ const ServicesSection = () => {
             description: "Interpretation of your epigenetic data to reveal insights into your health predispositions and needs.",
             icon: (
                 <svg className="h-12 w-12 text-blue-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 9l3 3m0 0l3-3m-3 3v8m0-13a9 9 0 110 18 9 9 0 010-18z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"/>
                 </svg>
             ),
             borderColor: "border-blue-500"
@@ -158,7 +159,7 @@ const ServicesSection = () => {
             description: "Guidance on utilizing wearable tech and apps to track progress and enhance your wellness journey.",
             icon: (
                 <svg className="h-12 w-12 text-purple-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                 </svg>
             ),
             borderColor: "border-purple-500"
@@ -167,8 +168,8 @@ const ServicesSection = () => {
             title: "Holistic Lifestyle Coaching",
             description: "Comprehensive guidance on sleep, stress reduction, mindfulness, and environmental factors.",
             icon: (
-                <svg className="h-12 w-12 text-orange-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM12 18c-1.657 0-3-.895-3-2s1.343-2 3-2 3 .895 3 2-1.343 2-3 2zM12 2c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zM12 22c-1.657 0-3-.895-3-2s1.343-2 3-2 3 .895 3 2-1.343 2-3 2zM12 10c-1.657 0-3-.895-3-2s1.343-2 3-2 3 .895 3 2-1.343 2-3 2zM12 14c-1.657 0-3-.895-3-2s1.343-2 3-2 3 .895 3 2-1.343 2-3 2z"/>
+                 <svg className="h-12 w-12 text-orange-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                 </svg>
             ),
             borderColor: "border-orange-500"
@@ -178,7 +179,7 @@ const ServicesSection = () => {
             description: "Workshops and programs for businesses to promote employee health and productivity.",
             icon: (
                 <svg className="h-12 w-12 text-teal-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19V6l-3 3H3m18 0l-3-3v13h3m-6 0H9m9 0a2 2 0 002-2V7a2 2 0 00-2-2H9a2 2 0 00-2 2v11a2 2 0 002 2h6z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                 </svg>
             ),
             borderColor: "border-teal-500"
@@ -188,7 +189,7 @@ const ServicesSection = () => {
             description: "Ongoing support and mentorship to ensure sustained progress and evolving wellness goals.",
             icon: (
                 <svg className="h-12 w-12 text-red-600 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
             ),
             borderColor: "border-red-500"
@@ -260,13 +261,14 @@ const TestimonialsSection = () => {
 
 // Image Gallery Section Component
 const ImageGallerySection = () => {
+    // Updated image sources with the new Flickr links provided
     const images = [
-        { src: "https://placehold.co/600x400/AED581/FFFFFF?text=Healthy+Lifestyle+1", alt: "Healthy Lifestyle Moment" },
-        { src: "https://placehold.co/600x400/9CCC65/FFFFFF?text=Epigenetic+Tech", alt: "Epigenetic Tech in Action" },
-        { src: "https://placehold.co/600x400/7CB342/FFFFFF?text=Mindful+Living", alt: "Mindful Living" },
-        { src: "https://placehold.co/600x400/558B2F/FFFFFF?text=Nature+and+Wellbeing", alt: "Nature Connection" },
-        { src: "https://placehold.co/600x400/33691E/FFFFFF?text=Personalized+Plan", alt: "Personalized Wellness Plan" },
-        { src: "https://placehold.co/600x400/2E7D32/FFFFFF?text=Client+Success", alt: "Client Success Story" },
+        { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" },
+        { src: "https://live.staticflickr.com/65535/54741071069_fd398740ca_b.jpg", alt: "Epigenetic Tech in Action" },
+        { src: "https://live.staticflickr.com/65535/54741059353_afec902d5c_b.jpg", alt: "Mindful Living" },
+        { src: "https://live.staticflickr.com/65535/54741061858_a309360543_b.jpg", alt: "Nature Connection" },
+        { src: "https://live.staticflickr.com/65535/54741211905_238a89ce0c_b.jpg", alt: "Personalized Wellness Plan" },
+        { src: "https://live.staticflickr.com/65535/54741215310_f197896b7d_o.png", alt: "Client Success Story" },
     ];
 
     return (
@@ -275,12 +277,12 @@ const ImageGallerySection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Visualizing Wellness & Epigenetic Tech</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {images.map((image, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group aspect-w-16 aspect-h-9 sm:aspect-h-10 md:aspect-h-11 lg:aspect-h-12">
+                        <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group aspect-w-1 aspect-h-1">
                             <img
                                 src={image.src}
                                 alt={image.alt}
                                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/600x400/cccccc/000000?text=Image+Error"; }}
+                                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found"; }}
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p className="text-white text-lg font-semibold text-left">{image.alt}</p>
@@ -316,7 +318,6 @@ const ContactSection = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission behavior
 
-        // In a real application, you would send this data to a backend or an email service.
         // For demonstration, we'll just log it and show the custom alert.
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
@@ -355,7 +356,6 @@ const ContactSection = () => {
                     <div className="mt-8 text-center text-gray-600">
                         <p>Or connect with Lilly:</p>
                         <p className="mt-2 text-lg">Email: <a href="mailto:lilly@lillycombest.com" className="text-green-600 hover:underline">lilly@lillycombest.com</a></p>
-                        {/* Phone number to 832-257-9197 */}
                         <p className="text-lg">Phone: <a href="tel:+18322579197" className="text-green-600 hover:underline">(832) 257-9197</a></p>
                     </div>
                 </div>
@@ -378,20 +378,13 @@ const ContactSection = () => {
 
 // Footer Component
 const Footer = () => {
-    const handleFooterLinkClick = (e) => {
-        e.preventDefault(); // Prevent default link navigation
-        // You can add custom logic here later, e.g., open a modal, or navigate to a placeholder route.
-        console.log("Footer link clicked - not yet implemented for navigation.");
-    };
-
     return (
         <footer className="bg-gray-800 text-white py-8">
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* Provided actual placeholder routes for href attributes */}
-                    <a href="/privacy-policy" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
-                    <a href="/terms-of-service" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#privacy" onClick={e => e.preventDefault()} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#terms" onClick={e => e.preventDefault()} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                 </div>
             </div>
         </footer>
