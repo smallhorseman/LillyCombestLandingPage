@@ -12,7 +12,7 @@ function App() {
     };
 
     return (
-        // The main container for the entire application, applying the new pastel/earthy theme
+        // The main container for the entire application, applying the pastel/earthy theme
         <div className="bg-stone-50 text-stone-800 min-h-screen font-sans">
             {/* Render the Header component */}
             <Header smoothScroll={smoothScroll} />
@@ -56,7 +56,7 @@ const Header = ({ smoothScroll }) => {
                     <a href="/" className="flex items-center">
                         <img 
                             src="https://live.staticflickr.com/65535/54741156968_f2f1431cbd.jpg" 
-                            alt="Lilly Combest Logo" 
+                            alt="Lilly Combest Logo - Wellness Consultant in Houston" 
                             className="h-16 w-auto" // Adjusted height for better visibility
                         />
                     </a>
@@ -99,9 +99,9 @@ const HeroSection = ({ smoothScroll }) => {
     return (
         <section className="bg-gradient-to-r from-rose-200 to-amber-100 text-stone-800 py-20 md:py-32 text-center rounded-b-lg shadow-lg">
             <div className="container mx-auto px-4">
-                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Unlock Your Potential with Epigenetic Wellness</h1>
-                <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Lilly Combest helps you harness the power of your unique genetic blueprint to achieve optimal health and vitality.</p>
-                <button onClick={() => smoothScroll('contact')} className="bg-white text-rose-600 hover:bg-rose-50 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out inline-block">Book a Free Consultation</button>
+                <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Houston Wellness Consultant & Life Coach</h1>
+                <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Discover holistic medicine and natural healing with Lilly Combest, your expert wellness consultant in The Woodlands, Spring, and the North Houston area. Unlock your health potential through epigenetics.</p>
+                <button onClick={() => smoothScroll('contact')} className="bg-white text-rose-600 hover:bg-rose-50 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out inline-block">Book Your Free Wellness Consultation</button>
             </div>
         </section>
     );
@@ -112,16 +112,16 @@ const AboutSection = () => {
     return (
         <section id="about" className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4 max-w-4xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">About Lilly Combest</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Your Health & Wellness Coach in Magnolia, TX</h2>
                 <div className="flex flex-col md:flex-row items-center md:space-x-8">
                     {/* Image for About section with new border color */}
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <img src="https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg" alt="Lilly Combest - Wellness Consultant" className="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-rose-300 md:w-full md:h-auto max-w-xs md:max-w-none" />
+                        <img src="https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg" alt="Lilly Combest - Life Coach for Natural Healing" className="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-rose-300 md:w-full md:h-auto max-w-xs md:max-w-none" />
                     </div>
                     <div className="md:w-2/3 text-lg leading-relaxed">
-                        <p className="mb-4">As a passionate <strong className="font-semibold">Wellness Consultant</strong>, Lilly Combest specializes in integrating cutting-edge <strong className="font-semibold">epigenetic technology</strong> to empower individuals on their health journeys. With years of experience and a deep understanding of how lifestyle influences gene expression, Lilly provides personalized strategies that go beyond one-size-fits-all approaches.</p>
-                        <p className="mb-4">Her mission is to help you understand your body at a foundational level, leveraging the science of epigenetics to optimize your nutrition, fitness, sleep, and stress management. Lilly believes in sustainable, science-backed solutions that lead to lasting well-being and a vibrant life.</p>
-                        <p>Discover how your genes and environment interact, and learn to make informed choices that positively impact your health and future.</p>
+                        <p className="mb-4">As a passionate <strong className="font-semibold">Wellness Consultant and Life Coach</strong> serving Houston, Magnolia, and Tomball, Lilly Combest is dedicated to your personal health journey. She specializes in integrating cutting-edge <strong className="font-semibold">epigenetics</strong> to offer a truly personalized approach to wellness. This isn't just another diet or remedy; it's a science-backed path to vitality.</p>
+                        <p className="mb-4">Her mission is to provide a natural healing strategy through <strong className="font-semibold">holistic medicine</strong>. Lilly helps you understand how your lifestyle impacts your genes, creating customized meal plans, supplement recommendations, and even skincare advice. Achieve lasting well-being with a health plan designed for you.</p>
+                        <p>If you're in Pinehurst, Spring, or The Woodlands and looking for a life coach focused on holistic health, discover how Lilly can guide you.</p>
                     </div>
                 </div>
             </div>
@@ -133,8 +133,8 @@ const AboutSection = () => {
 const ServicesSection = () => {
     const services = [
         {
-            title: "Personalized Wellness Plans",
-            description: "Customized strategies based on your unique epigenetic profile, covering diet, exercise, and lifestyle.",
+            title: "Custom Meal Plans & Diet Coaching",
+            description: "Personalized diet and meal plans based on your epigenetic profile to optimize your health and wellness. A natural remedy for better living.",
             icon: (
                 <svg className="h-12 w-12 text-rose-400 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002-2h2a2 2 0 002 2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
@@ -143,8 +143,8 @@ const ServicesSection = () => {
             borderColor: "border-rose-300"
         },
         {
-            title: "Epigenetic Testing & Analysis",
-            description: "Interpretation of your epigenetic data to reveal insights into your health predispositions and needs.",
+            title: "Epigenetics & Health Analysis",
+            description: "We analyze your unique genetic expression to provide insights into your health, guiding supplement choices and lifestyle adjustments.",
             icon: (
                 <svg className="h-12 w-12 text-sky-400 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"/>
@@ -153,18 +153,18 @@ const ServicesSection = () => {
             borderColor: "border-sky-300"
         },
         {
-            title: "Tech Integration Coaching",
-            description: "Guidance on utilizing wearable tech and apps to track progress and enhance your wellness journey.",
+            title: "Holistic Skincare Solutions",
+            description: "Achieve radiant skin from within. We offer guidance on skincare and supplements that align with your body's needs.",
             icon: (
                 <svg className="h-12 w-12 text-violet-400 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                 </svg>
             ),
             borderColor: "border-violet-300"
         },
         {
-            title: "Holistic Lifestyle Coaching",
-            description: "Comprehensive guidance on sleep, stress reduction, mindfulness, and environmental factors.",
+            title: "Life Coach for Natural Healing",
+            description: "Embrace holistic medicine with a life coach who guides you through natural healing techniques for mind and body wellness.",
             icon: (
                  <svg className="h-12 w-12 text-amber-500 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
@@ -173,8 +173,8 @@ const ServicesSection = () => {
             borderColor: "border-amber-400"
         },
         {
-            title: "Corporate Wellness Programs",
-            description: "Workshops and programs for businesses to promote employee health and productivity.",
+            title: "Corporate Wellness (North Houston)",
+            description: "Wellness consultant services for businesses in The Woodlands, Spring, and Tomball to boost employee health and productivity.",
             icon: (
                 <svg className="h-12 w-12 text-teal-400 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
@@ -183,8 +183,8 @@ const ServicesSection = () => {
             borderColor: "border-teal-300"
         },
         {
-            title: "Long-Term Health Partnerships",
-            description: "Ongoing support and mentorship to ensure sustained progress and evolving wellness goals.",
+            title: "Supplement Strategy & Guidance",
+            description: "Stop guessing which supplements to take. Get a personalized remedy and plan based on scientific data for optimal health.",
             icon: (
                 <svg className="h-12 w-12 text-stone-500 mb-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -197,7 +197,7 @@ const ServicesSection = () => {
     return (
         <section id="services" className="py-16 md:py-24 bg-stone-100">
             <div className="container mx-auto px-4 max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Our Services</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Holistic Wellness Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Map through the services array to render each service card */}
                     {services.map((service, index) => (
@@ -218,23 +218,23 @@ const TestimonialsSection = () => {
     // Array of testimonial objects for easy management and rendering
     const testimonials = [
         {
-            quote: "Lilly's approach to wellness transformed my life! Understanding my epigenetic profile made all the difference. I feel more energetic and focused than ever before.",
-            author: "Sarah J., Entrepreneur",
+            quote: "Lilly is the best wellness consultant in Houston! Her life coach approach combined with epigenetics changed my health. The meal plans were a perfect remedy for my fatigue.",
+            author: "Sarah J., The Woodlands, TX",
             borderColor: "border-rose-300"
         },
         {
-            quote: "I was skeptical about epigenetic tech, but Lilly explained everything so clearly. Her personalized plan helped me overcome chronic fatigue. Highly recommend!",
-            author: "Mark D., Software Engineer",
+            quote: "I found Lilly when searching for holistic medicine in Spring. Her natural healing philosophy and guidance on diet and supplements have been invaluable.",
+            author: "Mark D., Spring, TX",
             borderColor: "border-sky-300"
         },
         {
-            quote: "Working with Lilly has been incredible. She demystified my genetic data and provided actionable steps that fit seamlessly into my busy life. A true expert!",
-            author: "Emily R., Busy Mom",
+            quote: "As a life coach, Lilly is incredible. She helped me with a new diet, skincare routine, and supplements. I highly recommend her wellness services in the Tomball area.",
+            author: "Emily R., Tomball, TX",
             borderColor: "border-violet-300"
         },
         {
-            quote: "Lilly's insights into epigenetic tech are revolutionary. My overall well-being has significantly improved. She's a game-changer in the wellness space.",
-            author: "David L., Fitness Enthusiast",
+            quote: "The personalized meal plans and health insights from the epigenetic testing were a game-changer. A top-tier wellness consultant for the North Houston area.",
+            author: "David L., Houston, TX",
             borderColor: "border-amber-300"
         }
     ];
@@ -242,7 +242,7 @@ const TestimonialsSection = () => {
     return (
         <section id="testimonials" className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4 max-w-4xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">What Clients Say</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Client Wellness Journeys</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Map through the testimonials array to render each testimonial card */}
                     {testimonials.map((testimonial, index) => (
@@ -279,24 +279,20 @@ const ContactSection = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault(); // Prevent default form submission behavior
 
-        // For demonstration, we'll just log it and show the custom alert.
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
         console.log("Form data:", data);
-
-        // Display the custom alert message
+        
         showCustomAlert("Thank you for your message! Lilly will get back to you soon.");
-
-        // Clear the form after submission
         e.target.reset();
     };
 
     return (
         <section id="contact" className="py-16 md:py-24 bg-stone-100">
             <div className="container mx-auto px-4 max-w-3xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Get in Touch</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">Contact Your Houston Wellness Consultant</h2>
                 <div className="bg-white p-8 rounded-lg shadow-xl border-t-4 border-rose-300">
-                    <p className="text-center text-lg mb-8 text-stone-700">Ready to start your journey to optimal health? Fill out the form below or reach out directly.</p>
+                    <p className="text-center text-lg mb-8 text-stone-700">Ready to begin your natural healing journey? Contact Lilly, your life coach for wellness in Houston, The Woodlands, Magnolia, Tomball, Spring, Pinehurst, and the entire North Houston area.</p>
                     <form onSubmit={handleFormSubmit} className="space-y-6">
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-stone-700">Name</label>
@@ -308,14 +304,14 @@ const ContactSection = () => {
                         </div>
                         <div>
                             <label htmlFor="message" className="block text-sm font-medium text-stone-700">Message</label>
-                            <textarea id="message" name="message" rows="5" className="mt-1 block w-full px-4 py-2 border border-stone-300 rounded-md shadow-sm focus:ring-rose-500 focus:border-rose-500 sm:text-sm" placeholder="Tell me about your wellness goals..." required></textarea>
+                            <textarea id="message" name="message" rows="5" className="mt-1 block w-full px-4 py-2 border border-stone-300 rounded-md shadow-sm focus:ring-rose-500 focus:border-rose-500 sm:text-sm" placeholder="Tell me about your health and wellness goals..." required></textarea>
                         </div>
                         <div className="text-center">
                             <button type="submit" className="bg-rose-500 text-white hover:bg-rose-600 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">Send Message</button>
                         </div>
                     </form>
                     <div className="mt-8 text-center text-stone-600">
-                        <p>Or connect with Lilly:</p>
+                        <p>Or connect with your wellness consultant directly:</p>
                         <p className="mt-2 text-lg">Email: <a href="mailto:lilly@lillycombest.com" className="text-rose-500 hover:underline">lilly@lillycombest.com</a></p>
                         <p className="text-lg">Phone: <a href="tel:+18322579197" className="text-rose-500 hover:underline">(832) 257-9197</a></p>
                     </div>
@@ -342,7 +338,7 @@ const Footer = () => {
     return (
         <footer className="bg-stone-800 text-white py-8">
             <div className="container mx-auto px-4 text-center">
-                <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
+                <p>&copy; 2025 Lilly Combest | Wellness Consultant & Life Coach | Houston, TX</p>
                 <div className="flex justify-center space-x-4 mt-4">
                     <a href="#privacy" onClick={e => e.preventDefault()} className="text-stone-400 hover:text-white transition duration-300">Privacy Policy</a>
                     <a href="#terms" onClick={e => e.preventDefault()} className="text-stone-400 hover:text-white transition duration-300">Terms of Service</a>
