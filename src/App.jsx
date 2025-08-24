@@ -55,7 +55,6 @@ const Header = ({ smoothScroll }) => {
                     <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"/>
                     </svg>
-                    {/* Fixed: Changed href="#" to href="/" for the main title link */}
                     <a href="/" className="text-2xl font-bold text-gray-900">Lilly Combest</a>
                 </div>
                 <nav className="hidden md:block">
@@ -336,14 +335,20 @@ const ContactSection = () => {
 
 // Footer Component
 const Footer = () => {
+    const handleFooterLinkClick = (e) => {
+        e.preventDefault(); // Prevent default link navigation
+        // You can add custom logic here later, e.g., open a modal, or navigate to a placeholder route.
+        console.log("Footer link clicked - not yet implemented for navigation.");
+    };
+
     return (
         <footer className="bg-gray-800 text-white py-8">
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* Fixed: Changed href="#" to href="javascript:void(0)" for placeholder links */}
-                    <a href="javascript:void(0)" className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
-                    <a href="javascript:void(0)" className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    {/* Fixed: Using href="#" with role="button" and onClick to prevent navigation for placeholder links */}
+                    <a href="#" role="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" role="button" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                 </div>
             </div>
         </footer>
