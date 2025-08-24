@@ -52,10 +52,10 @@ const Header = ({ smoothScroll }) => {
         <header className="bg-white shadow-sm py-2 sticky top-0 z-40">
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center">
-                    {/* Replaced SVG with the uploaded logo image */}
+                    {/* Using the direct image link from the Flickr embed code */}
                     <a href="/" className="flex items-center">
                         <img 
-                            src="http://googleusercontent.com/file_content/1" 
+                            src="https://live.staticflickr.com/65535/54741156968_f2f1431cbd.jpg" 
                             alt="Lilly Combest Logo" 
                             className="h-16 w-auto" // Adjusted height for better visibility
                         />
