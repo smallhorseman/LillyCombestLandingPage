@@ -1,0 +1,22 @@
+/* Import Tailwind's base styles, which include preflight for consistency */
+@tailwind base;
+
+/* Import Tailwind's component styles */
+@tailwind components;
+
+/* Import Tailwind's utility classes */
+@tailwind utilities;
+
+/*
+  Optional: You can define custom CSS variables or global styles here.
+  For example, to explicitly set the font family across the entire app if not
+  already done in index.html's style tag or via Tailwind config.
+*/
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Ensuring Inter font is applied globally */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Any other global custom styles would go here */
