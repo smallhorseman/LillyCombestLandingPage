@@ -25,7 +25,7 @@ function App() {
                 <ServicesSection />
                 {/* Render the TestimonialsSection */}
                 <TestimonialsSection />
-                {/* NEW: Image Gallery Section */}
+                {/* Image Gallery Section */}
                 <ImageGallerySection />
                 {/* Render the ContactSection */}
                 <ContactSection />
@@ -65,7 +65,7 @@ const Header = ({ smoothScroll }) => {
                         <li><a href="#about" onClick={() => smoothScroll('about')} className="text-gray-600 hover:text-green-600 transition duration-300">About</a></li>
                         <li><a href="#services" onClick={() => smoothScroll('services')} className="text-gray-600 hover:text-green-600 transition duration-300">Services</a></li>
                         <li><a href="#testimonials" onClick={() => smoothScroll('testimonials')} className="text-gray-600 hover:text-green-600 transition duration-300">Testimonials</a></li>
-                        <li><a href="#gallery" onClick={() => smoothScroll('gallery')} className="text-gray-600 hover:text-green-600 transition duration-300">Gallery</a></li> {/* Added Gallery link */}
+                        <li><a href="#gallery" onClick={() => smoothScroll('gallery')} className="text-gray-600 hover:text-green-600 transition duration-300">Gallery</a></li>
                         <li><a href="#contact" onClick={() => smoothScroll('contact')} className="text-gray-600 hover:text-green-600 transition duration-300">Contact</a></li>
                     </ul>
                 </nav>
@@ -87,7 +87,7 @@ const Header = ({ smoothScroll }) => {
                     <li><a href="#about" onClick={() => closeMobileMenu('about')} className="text-gray-800 hover:text-green-600 transition duration-300">About</a></li>
                     <li><a href="#services" onClick={() => closeMobileMenu('services')} className="text-gray-800 hover:text-green-600 transition duration-300">Services</a></li>
                     <li><a href="#testimonials" onClick={() => closeMobileMenu('testimonials')} className="text-gray-800 hover:text-green-600 transition duration-300">Testimonials</a></li>
-                    <li><a href="#gallery" onClick={() => closeMobileMenu('gallery')} className="text-gray-800 hover:text-green-600 transition duration-300">Gallery</a></li> {/* Added Gallery link */}
+                    <li><a href="#gallery" onClick={() => closeMobileMenu('gallery')} className="text-gray-800 hover:text-green-600 transition duration-300">Gallery</a></li>
                     <li><a href="#contact" onClick={() => closeMobileMenu('contact')} className="text-gray-800 hover:text-green-600 transition duration-300">Contact</a></li>
                 </ul>
             </div>
@@ -115,7 +115,7 @@ const AboutSection = () => {
             <div className="container mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">About Lilly Combest</h2>
                 <div className="flex flex-col md:flex-row items-center md:space-x-8">
-                    {/* UPDATED: Image for About section with the provided Flickr URL */}
+                    {/* Image for About section with the provided Flickr URL */}
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
                         <img src="https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg" alt="Lilly Combest - Wellness Consultant" class="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-green-500 md:w-full md:h-auto max-w-xs md:max-w-none" />
                     </div>
@@ -258,16 +258,15 @@ const TestimonialsSection = () => {
     );
 };
 
-// NEW: Image Gallery Section Component
+// Image Gallery Section Component
 const ImageGallerySection = () => {
-    // Example Flickr-style placeholder URLs. REPLACE THESE with actual Flickr image URLs.
     const images = [
-        { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" }, // Updated with your provided Flickr URL
-        { src: "https://live.staticflickr.com/65535/53912345679_b2c3d4e5f6_z.jpg", alt: "Epigenetic Tech in Action" },
-        { src: "https://live.staticflickr.com/65535/53912345680_c3d4e5f6g7_z.jpg", alt: "Mindful Living" },
-        { src: "https://live.staticflickr.com/65535/53912345681_d4e5f6g7h8_z.jpg", alt: "Nature Connection" },
-        { src: "https://live.staticflickr.com/65535/53912345682_e5f6g7h8i9_z.jpg", alt: "Personalized Wellness Plan" },
-        { src: "https://live.staticflickr.com/65535/53912345683_f6g7h8i9j0_z.jpg", alt: "Client Success Story" },
+        { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" },
+        { src: "https://live.staticflickr.com/65535/54741071069_fd398740ca_b.jpg", alt: "Epigenetic Tech in Action" },
+        { src: "https://live.staticflickr.com/65535/54741059353_afec902d5c_b.jpg", alt: "Mindful Living" },
+        { src: "https://live.staticflickr.com/65535/54741061858_a309360543_b.jpg", alt: "Nature Connection" },
+        { src: "https://live.staticflickr.com/65535/54741211905_238a89ce0c_b.jpg", alt: "Personalized Wellness Plan" }, // Your provided Flickr URL
+        { src: "https://live.staticflickr.com/65535/54741215310_f197896b7d_o.png", alt: "Client Success Story" }, // UPDATED with your new Flickr URL
     ];
 
     return (
@@ -276,14 +275,14 @@ const ImageGallerySection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Visualizing Wellness & Epigenetic Tech</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {images.map((image, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group">
+                        <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group aspect-w-16 aspect-h-9 sm:aspect-h-10 md:aspect-h-11 lg:aspect-h-12">
                             <img
                                 src={image.src}
                                 alt={image.alt}
-                                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                             />
-                            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <p className="text-white text-lg font-semibold text-center px-4">{image.alt}</p>
+                            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg font-semibold text-left">{image.alt}</p>
                             </div>
                         </div>
                     ))}
