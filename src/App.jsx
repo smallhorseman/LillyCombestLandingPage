@@ -261,7 +261,7 @@ const TestimonialsSection = () => {
 
 // Image Gallery Section Component
 const ImageGallerySection = () => {
-    // Updated image sources with the new Flickr links provided
+    // Using the specific Flickr links as requested.
     const images = [
         { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" },
         { src: "https://live.staticflickr.com/65535/54741071069_fd398740ca_b.jpg", alt: "Epigenetic Tech in Action" },
