@@ -25,8 +25,6 @@ function App() {
                 <ServicesSection />
                 {/* Render the TestimonialsSection */}
                 <TestimonialsSection />
-                {/* Image Gallery Section */}
-                <ImageGallerySection />
                 {/* Render the ContactSection */}
                 <ContactSection />
             </main>
@@ -66,7 +64,6 @@ const Header = ({ smoothScroll }) => {
                         <li><a href="#about" onClick={(e) => { e.preventDefault(); smoothScroll('about'); }} className="text-gray-600 hover:text-green-600 transition duration-300">About</a></li>
                         <li><a href="#services" onClick={(e) => { e.preventDefault(); smoothScroll('services'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Services</a></li>
                         <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); smoothScroll('testimonials'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Testimonials</a></li>
-                        <li><a href="#gallery" onClick={(e) => { e.preventDefault(); smoothScroll('gallery'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Gallery</a></li>
                         <li><a href="#contact" onClick={(e) => { e.preventDefault(); smoothScroll('contact'); }} className="text-gray-600 hover:text-green-600 transition duration-300">Contact</a></li>
                     </ul>
                 </nav>
@@ -88,7 +85,6 @@ const Header = ({ smoothScroll }) => {
                     <li><a href="#about" onClick={(e) => { e.preventDefault(); closeMobileMenu('about'); }} className="text-gray-800 hover:text-green-600 transition duration-300">About</a></li>
                     <li><a href="#services" onClick={(e) => { e.preventDefault(); closeMobileMenu('services'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Services</a></li>
                     <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); closeMobileMenu('testimonials'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Testimonials</a></li>
-                    <li><a href="#gallery" onClick={(e) => { e.preventDefault(); closeMobileMenu('gallery'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Gallery</a></li>
                     <li><a href="#contact" onClick={(e) => { e.preventDefault(); closeMobileMenu('contact'); }} className="text-gray-800 hover:text-green-600 transition duration-300">Contact</a></li>
                 </ul>
             </div>
@@ -258,43 +254,6 @@ const TestimonialsSection = () => {
         </section>
     );
 };
-
-// Image Gallery Section Component
-const ImageGallerySection = () => {
-    // Using the specific Flickr links as requested.
-    const images = [
-        { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" },
-        { src: "https://live.staticflickr.com/65535/54741071069_fd398740ca_b.jpg", alt: "Epigenetic Tech in Action" },
-        { src: "https://live.staticflickr.com/65535/54741059353_afec902d5c_b.jpg", alt: "Mindful Living" },
-        { src: "https://live.staticflickr.com/65535/54741061858_a309360543_b.jpg", alt: "Nature Connection" },
-        { src: "https://live.staticflickr.com/65535/54741211905_238a89ce0c_b.jpg", alt: "Personalized Wellness Plan" },
-        { src: "https://live.staticflickr.com/65535/54741215310_f197896b7d_o.png", alt: "Client Success Story" },
-    ];
-
-    return (
-        <section id="gallery" className="py-16 md:py-24 bg-gray-50">
-            <div className="container mx-auto px-4 max-w-6xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Visualizing Wellness & Epigenetic Tech</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {images.map((image, index) => (
-                        <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group aspect-w-1 aspect-h-1">
-                            <img
-                                src={image.src}
-                                alt={image.alt}
-                                className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/600x400/cccccc/000000?text=Image+Not+Found"; }}
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <p className="text-white text-lg font-semibold text-left">{image.alt}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-};
-
 
 // Contact Section Component
 const ContactSection = () => {
