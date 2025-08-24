@@ -49,15 +49,17 @@ const Header = ({ smoothScroll }) => {
     };
 
     return (
-        <header className="bg-white shadow-sm py-4 sticky top-0 z-40">
+        <header className="bg-white shadow-sm py-2 sticky top-0 z-40">
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <div className="flex items-center space-x-2">
-                    {/* Lilly's Logo/Icon with new color */}
-                    <svg className="h-8 w-8 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"/>
-                    </svg>
-                    {/* Link to homepage */}
-                    <a href="/" className="text-2xl font-bold text-stone-900">Lilly Combest</a>
+                <div className="flex items-center">
+                    {/* Replaced SVG with the uploaded logo image */}
+                    <a href="/" className="flex items-center">
+                        <img 
+                            src="http://googleusercontent.com/file_content/1" 
+                            alt="Lilly Combest Logo" 
+                            className="h-16 w-auto" // Adjusted height for better visibility
+                        />
+                    </a>
                 </div>
                 <nav className="hidden md:block">
                     <ul className="flex space-x-6">
