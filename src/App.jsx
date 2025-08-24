@@ -348,9 +348,9 @@ const Footer = () => {
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* Using href="" with an onClick handler that prevents default navigation for placeholder links */}
-                    <a href="" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
-                    <a href="" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    {/* Fixed: Provided actual placeholder routes for href attributes */}
+                    <a href="/privacy-policy" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="/terms-of-service" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                 </div>
             </div>
         </footer>
