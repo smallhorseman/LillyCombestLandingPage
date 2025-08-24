@@ -115,9 +115,9 @@ const AboutSection = () => {
             <div className="container mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">About Lilly Combest</h2>
                 <div className="flex flex-col md:flex-row items-center md:space-x-8">
-                    {/* Image for About section with the provided Flickr URL */}
+                    {/* Placeholder image for About section */}
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <img src="https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg" alt="Lilly Combest - Wellness Consultant" class="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-green-500 md:w-full md:h-auto max-w-xs md:max-w-none" />
+                        <img src="https://placehold.co/400x400/81C784/FFFFFF?text=Lilly+Combest" alt="Lilly Combest - Wellness Consultant" className="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-green-500 md:w-full md:h-auto max-w-xs md:max-w-none" />
                     </div>
                     <div className="md:w-2/3 text-lg leading-relaxed">
                         <p className="mb-4">As a passionate <strong className="font-semibold">Wellness Consultant</strong>, Lilly Combest specializes in integrating cutting-edge <strong className="font-semibold">epigenetic technology</strong> to empower individuals on their health journeys. With years of experience and a deep understanding of how lifestyle influences gene expression, Lilly provides personalized strategies that go beyond one-size-fits-all approaches.</p>
@@ -221,7 +221,7 @@ const TestimonialsSection = () => {
         {
             quote: "Lilly's approach to wellness transformed my life! Understanding my epigenetic profile made all the difference. I feel more energetic and focused than ever before.",
             author: "Sarah J., Entrepreneur",
-            borderColor: "border-green-400" // Tailwind class for border color
+            borderColor: "border-green-400" // Tailwind className for border color
         },
         {
             quote: "I was skeptical about epigenetic tech, but Lilly explained everything so clearly. Her personalized plan helped me overcome chronic fatigue. Highly recommend!",
@@ -261,12 +261,12 @@ const TestimonialsSection = () => {
 // Image Gallery Section Component
 const ImageGallerySection = () => {
     const images = [
-        { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" },
-        { src: "https://live.staticflickr.com/65535/54741071069_fd398740ca_b.jpg", alt: "Epigenetic Tech in Action" },
-        { src: "https://live.staticflickr.com/65535/54741059353_afec902d5c_b.jpg", alt: "Mindful Living" },
-        { src: "https://live.staticflickr.com/65535/54741061858_a309360543_b.jpg", alt: "Nature Connection" },
-        { src: "https://live.staticflickr.com/65535/54741211905_238a89ce0c_b.jpg", alt: "Personalized Wellness Plan" },
-        { src: "https://live.staticflickr.com/65535/54741215310_f197896b7d_o.png", alt: "Client Success Story" }, // UPDATED with your new Flickr URL
+        { src: "https://placehold.co/600x400/AED581/FFFFFF?text=Healthy+Lifestyle+1", alt: "Healthy Lifestyle Moment" },
+        { src: "https://placehold.co/600x400/9CCC65/FFFFFF?text=Epigenetic+Tech", alt: "Epigenetic Tech in Action" },
+        { src: "https://placehold.co/600x400/7CB342/FFFFFF?text=Mindful+Living", alt: "Mindful Living" },
+        { src: "https://placehold.co/600x400/558B2F/FFFFFF?text=Nature+and+Wellbeing", alt: "Nature Connection" },
+        { src: "https://placehold.co/600x400/33691E/FFFFFF?text=Personalized+Plan", alt: "Personalized Wellness Plan" },
+        { src: "https://placehold.co/600x400/2E7D32/FFFFFF?text=Client+Success", alt: "Client Success Story" },
     ];
 
     return (
@@ -280,6 +280,7 @@ const ImageGallerySection = () => {
                                 src={image.src}
                                 alt={image.alt}
                                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/600x400/cccccc/000000?text=Image+Error"; }}
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-end justify-start p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <p className="text-white text-lg font-semibold text-left">{image.alt}</p>
@@ -354,7 +355,7 @@ const ContactSection = () => {
                     <div className="mt-8 text-center text-gray-600">
                         <p>Or connect with Lilly:</p>
                         <p className="mt-2 text-lg">Email: <a href="mailto:lilly@lillycombest.com" className="text-green-600 hover:underline">lilly@lillycombest.com</a></p>
-                        {/* UPDATED: Phone number to 832-257-9197 */}
+                        {/* Phone number to 832-257-9197 */}
                         <p className="text-lg">Phone: <a href="tel:+18322579197" className="text-green-600 hover:underline">(832) 257-9197</a></p>
                     </div>
                 </div>
