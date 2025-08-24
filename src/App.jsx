@@ -25,6 +25,8 @@ function App() {
                 <ServicesSection />
                 {/* Render the TestimonialsSection */}
                 <TestimonialsSection />
+                {/* NEW: Image Gallery Section */}
+                <ImageGallerySection />
                 {/* Render the ContactSection */}
                 <ContactSection />
             </main>
@@ -63,6 +65,7 @@ const Header = ({ smoothScroll }) => {
                         <li><a href="#about" onClick={() => smoothScroll('about')} className="text-gray-600 hover:text-green-600 transition duration-300">About</a></li>
                         <li><a href="#services" onClick={() => smoothScroll('services')} className="text-gray-600 hover:text-green-600 transition duration-300">Services</a></li>
                         <li><a href="#testimonials" onClick={() => smoothScroll('testimonials')} className="text-gray-600 hover:text-green-600 transition duration-300">Testimonials</a></li>
+                        <li><a href="#gallery" onClick={() => smoothScroll('gallery')} className="text-gray-600 hover:text-green-600 transition duration-300">Gallery</a></li> {/* Added Gallery link */}
                         <li><a href="#contact" onClick={() => smoothScroll('contact')} className="text-gray-600 hover:text-green-600 transition duration-300">Contact</a></li>
                     </ul>
                 </nav>
@@ -84,6 +87,7 @@ const Header = ({ smoothScroll }) => {
                     <li><a href="#about" onClick={() => closeMobileMenu('about')} className="text-gray-800 hover:text-green-600 transition duration-300">About</a></li>
                     <li><a href="#services" onClick={() => closeMobileMenu('services')} className="text-gray-800 hover:text-green-600 transition duration-300">Services</a></li>
                     <li><a href="#testimonials" onClick={() => closeMobileMenu('testimonials')} className="text-gray-800 hover:text-green-600 transition duration-300">Testimonials</a></li>
+                    <li><a href="#gallery" onClick={() => closeMobileMenu('gallery')} className="text-gray-800 hover:text-green-600 transition duration-300">Gallery</a></li> {/* Added Gallery link */}
                     <li><a href="#contact" onClick={() => closeMobileMenu('contact')} className="text-gray-800 hover:text-green-600 transition duration-300">Contact</a></li>
                 </ul>
             </div>
@@ -111,8 +115,9 @@ const AboutSection = () => {
             <div className="container mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">About Lilly Combest</h2>
                 <div className="flex flex-col md:flex-row items-center md:space-x-8">
+                    {/* UPDATED: Image for About section with the provided Flickr URL */}
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <img src="https://placehold.co/300x300/e2e8f0/000000?text=Lilly+Combest" alt="Lilly Combest" className="rounded-full shadow-lg w-48 h-48 object-cover border-4 border-green-500" />
+                        <img src="https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg" alt="Lilly Combest - Wellness Consultant" class="rounded-lg shadow-xl w-64 h-64 object-cover border-4 border-green-500 md:w-full md:h-auto max-w-xs md:max-w-none" />
                     </div>
                     <div className="md:w-2/3 text-lg leading-relaxed">
                         <p className="mb-4">As a passionate <strong className="font-semibold">Wellness Consultant</strong>, Lilly Combest specializes in integrating cutting-edge <strong className="font-semibold">epigenetic technology</strong> to empower individuals on their health journeys. With years of experience and a deep understanding of how lifestyle influences gene expression, Lilly provides personalized strategies that go beyond one-size-fits-all approaches.</p>
@@ -253,6 +258,42 @@ const TestimonialsSection = () => {
     );
 };
 
+// NEW: Image Gallery Section Component
+const ImageGallerySection = () => {
+    // Example Flickr-style placeholder URLs. REPLACE THESE with actual Flickr image URLs.
+    const images = [
+        { src: "https://live.staticflickr.com/65535/54707460080_9268e14b5b_k.jpg", alt: "Lilly Combest - Wellness Consultant" }, // Updated with your provided Flickr URL
+        { src: "https://live.staticflickr.com/65535/53912345679_b2c3d4e5f6_z.jpg", alt: "Epigenetic Tech in Action" },
+        { src: "https://live.staticflickr.com/65535/53912345680_c3d4e5f6g7_z.jpg", alt: "Mindful Living" },
+        { src: "https://live.staticflickr.com/65535/53912345681_d4e5f6g7h8_z.jpg", alt: "Nature Connection" },
+        { src: "https://live.staticflickr.com/65535/53912345682_e5f6g7h8i9_z.jpg", alt: "Personalized Wellness Plan" },
+        { src: "https://live.staticflickr.com/65535/53912345683_f6g7h8i9j0_z.jpg", alt: "Client Success Story" },
+    ];
+
+    return (
+        <section id="gallery" className="py-16 md:py-24 bg-gray-50">
+            <div className="container mx-auto px-4 max-w-6xl">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Visualizing Wellness & Epigenetic Tech</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {images.map((image, index) => (
+                        <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group">
+                            <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p className="text-white text-lg font-semibold text-center px-4">{image.alt}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+
 // Contact Section Component
 const ContactSection = () => {
     // State to manage the visibility and message of the custom alert modal
@@ -348,7 +389,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Lilly Combest. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    {/* Fixed: Provided actual placeholder routes for href attributes */}
+                    {/* Provided actual placeholder routes for href attributes */}
                     <a href="/privacy-policy" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
                     <a href="/terms-of-service" onClick={handleFooterLinkClick} className="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
                 </div>
