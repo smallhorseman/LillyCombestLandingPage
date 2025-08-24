@@ -1,0 +1,7 @@
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  # You can add optional configuration here if needed
+  # For example, to exclude a certain page:
+  # exclude = ["/admin/**"]
