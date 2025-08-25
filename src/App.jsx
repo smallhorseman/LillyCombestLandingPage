@@ -89,7 +89,7 @@ const translations = {
           <p class="mb-4">Navigating the world of wellness can be overwhelming. As a wellness consultant in Houston, I specialize in holistic and natural health. My goal is to guide you through the noise and help you find a path that works for you, whether you're in Tomball, Magnolia, or right here in Houston.</p>
           <p class="mb-4">A wellness consultant does more than just offer advice; we create a partnership to help you achieve your health goals. This includes everything from developing a sustainable diet and supplement strategy to finding a skincare routine that complements your internal health. We look at the whole picture, because true wellness is interconnected.</p>
           <h3 class="text-2xl font-bold mt-6 mb-4">What is a Holistic Approach?</h3>
-          <p>A holistic approach treats the body as a whole, integrated system. Instead of just treating symptoms, we look for the root cause. This could mean adjusting your meal plans, recommending specific supplements as a natural solution, or developing stress-management techniques. It’s a comprehensive approach to long-term health and vitality.</p>
+          <p>A holistic approach treats the body as a whole, integrated system. Instead of just treating symptoms, we look for the root cause. This should mean adjusting your meal plans, recommending specific supplements as a natural solution, or developing stress-management techniques. It’s a comprehensive approach to long-term health and vitality.</p>
       `,
       blog_post3_title: "Custom Meal Plans for a Healthier You in the North Houston Area",
       blog_post3_snippet: "Are you tired of diets that don't deliver? As a wellness consultant in the North Houston area, I create scientifically-backed meal plans tailored to your unique profile. This isn't just a diet; it's a blueprint for your optimal health...",
@@ -560,6 +560,6 @@ export default function App() {
     return (
         <LanguageProvider>
             <AppInternal />
-        </Language-Provider>
+        </LanguageProvider>
     );
 }
