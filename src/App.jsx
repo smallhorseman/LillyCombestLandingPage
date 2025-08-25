@@ -15,46 +15,46 @@ const translations = {
       logo_alt: "Lilly Combest Logo - Wellness Consultant in Houston",
 
       // Hero Section
-      hero_title: "Houston Wellness Consultant & Life Coach",
-      hero_subtitle: "Discover holistic medicine and natural healing with Lilly Combest, your expert wellness consultant in The Woodlands, Spring, and the North Houston area. Unlock your health potential through epigenetics.",
+      hero_title: "Houston Wellness Consultant",
+      hero_subtitle: "Discover holistic wellness and natural health strategies with Lilly Combest, your expert wellness consultant serving The Woodlands, Spring, and the greater North Houston area. Unlock your health's potential through personalized guidance.",
       hero_cta: "Book Your Free Wellness Consultation",
 
       // About Section
-      about_title: "Your Health & Wellness Coach in Magnolia, TX",
-      about_p1: "As a passionate <strong>Wellness Consultant and Life Coach</strong> serving Houston, Magnolia, and Tomball, Lilly Combest is dedicated to your personal health journey. She specializes in integrating cutting-edge <strong>epigenetics</strong> to offer a truly personalized approach to wellness. This isn't just another diet or remedy; it's a science-backed path to vitality.",
-      about_p2: "Her mission is to provide a natural healing strategy through <strong>holistic medicine</strong>. Lilly helps you understand how your lifestyle impacts your genes, creating customized meal plans, supplement recommendations, and even skincare advice. Achieve lasting well-being with a health plan designed for you.",
-      about_p3: "If you're in Pinehurst, Spring, or The Woodlands and looking for a life coach focused on holistic health, discover how Lilly can guide you.",
-      about_img_alt: "Lilly Combest - Life Coach for Natural Healing",
+      about_title: "Your Health & Wellness Consultant in Magnolia, TX",
+      about_p1: "As a passionate <strong>Wellness Consultant</strong> serving Houston, Magnolia, and Tomball, Lilly Combest is dedicated to your personal health journey. She specializes in creating a truly personalized approach to wellness based on your unique goals. This isn't just another diet or temporary fix; it's a science-backed path to vitality.",
+      about_p2: "Her mission is to provide a natural health strategy through a <strong>holistic approach</strong>. Lilly helps you understand how your lifestyle impacts your well-being, creating customized meal plans, supplement recommendations, and even skincare advice. Achieve lasting wellness with a health plan designed specifically for you.",
+      about_p3: "If you're in Pinehurst, Spring, or The Woodlands and looking for a consultant focused on holistic health, discover how Lilly can guide you.",
+      about_img_alt: "Lilly Combest - Consultant for Natural Wellness",
 
       // Services Section
       services_title: "Holistic Wellness Services",
       service1_title: "Custom Meal Plans & Diet Coaching",
-      service1_desc: "Personalized diet and meal plans based on your epigenetic profile to optimize your health and wellness. A natural remedy for better living.",
-      service2_title: "Epigenetics & Health Analysis",
-      service2_desc: "We analyze your unique genetic expression to provide insights into your health, guiding supplement choices and lifestyle adjustments.",
+      service1_desc: "Personalized diet and meal plans based on your unique profile to optimize your health and wellness. A natural approach for better living.",
+      service2_title: "Personalized Health Analysis",
+      service2_desc: "We analyze your lifestyle and goals to provide insights into your health, guiding supplement choices and lifestyle adjustments.",
       service3_title: "Holistic Skincare Solutions",
       service3_desc: "Achieve radiant skin from within. We offer guidance on skincare and supplements that align with your body's needs.",
-      service4_title: "Life Coach for Natural Healing",
-      service4_desc: "Embrace holistic medicine with a life coach who guides you through natural healing techniques for mind and body wellness.",
+      service4_title: "Guidance for Natural Health",
+      service4_desc: "Embrace a holistic approach with a consultant who guides you through natural techniques for mind and body wellness.",
       service5_title: "Corporate Wellness (North Houston)",
-      service5_desc: "Wellness consultant services for businesses in The Woodlands, Spring, and Tomball to boost employee health and productivity.",
+      service5_desc: "Wellness consulting for businesses in The Woodlands, Spring, and Tomball to boost employee health and productivity.",
       service6_title: "Supplement Strategy & Guidance",
-      service6_desc: "Stop guessing which supplements to take. Get a personalized remedy and plan based on scientific data for optimal health.",
+      service6_desc: "Stop guessing which supplements to take. Get a personalized plan based on your wellness goals for optimal health.",
       
       // Testimonials Section
       testimonials_title: "Client Wellness Journeys",
-      testimonial1_quote: "Lilly is the best wellness consultant in Houston! Her life coach approach combined with epigenetics changed my health. The meal plans were a perfect remedy for my fatigue.",
+      testimonial1_quote: "Lilly is the best wellness consultant in Houston! Her personalized approach changed my health. The meal plans were a perfect solution for my fatigue.",
       testimonial1_author: "Sarah J., The Woodlands, TX",
-      testimonial2_quote: "I found Lilly when searching for holistic medicine in Spring. Her natural healing philosophy and guidance on diet and supplements have been invaluable.",
+      testimonial2_quote: "I found Lilly when searching for holistic wellness in Spring. Her natural health philosophy and guidance on diet and supplements have been invaluable.",
       testimonial2_author: "Mark D., Spring, TX",
-      testimonial3_quote: "As a life coach, Lilly is incredible. She helped me with a new diet, skincare routine, and supplements. I highly recommend her wellness services in the Tomball area.",
+      testimonial3_quote: "Lilly is an incredible wellness consultant. She helped me with a new diet, skincare routine, and supplements. I highly recommend her services in the Tomball area.",
       testimonial3_author: "Emily R., Tomball, TX",
-      testimonial4_quote: "The personalized meal plans and health insights from the epigenetic testing were a game-changer. A top-tier wellness consultant for the North Houston area.",
+      testimonial4_quote: "The personalized meal plans and health insights were a game-changer. A top-tier wellness consultant for the North Houston area.",
       testimonial4_author: "David L., Houston, TX",
 
       // Contact Section
       contact_title: "Contact Your Houston Wellness Consultant",
-      contact_intro: "Ready to begin your natural healing journey? Contact Lilly, your life coach for wellness in Houston, The Woodlands, Magnolia, Tomball, Spring, Pinehurst, and the entire North Houston area.",
+      contact_intro: "Ready to begin your natural health journey? Contact Lilly, your wellness consultant for Houston, The Woodlands, Magnolia, Tomball, Spring, Pinehurst, and the entire North Houston area.",
       contact_name: "Name",
       contact_email: "Email",
       contact_message: "Message",
@@ -67,7 +67,7 @@ const translations = {
       contact_success_close: "Got It!",
 
       // Footer
-      footer_copyright: "© 2025 Lilly Combest | Wellness Consultant & Life Coach | Houston, TX",
+      footer_copyright: "© 2025 Lilly Combest | Wellness Consultant | Houston, TX",
       footer_privacy: "Privacy Policy",
       footer_terms: "Terms of Service",
 
@@ -75,27 +75,27 @@ const translations = {
       blog_title: "Wellness & Health Blog",
       blog_back_button: "← Back to Blog",
       blog_read_more: "Read More →",
-      blog_post1_title: "The Power of Epigenetics: A Natural Remedy for Wellness in The Woodlands",
-      blog_post1_snippet: "Discover how the science of epigenetics is revolutionizing our approach to health. As a wellness consultant serving The Woodlands and the greater North Houston area, I see how personalized diet and lifestyle changes can act as a natural remedy...",
+      blog_post1_title: "The Power of Personalized Nutrition: A Natural Approach for Wellness in The Woodlands",
+      blog_post1_snippet: "Discover how a personalized approach to health is revolutionizing wellness. As a wellness consultant serving The Woodlands and the greater North Houston area, I see how personalized diet and lifestyle changes can be a natural solution...",
       blog_post1_content: `
-          <p class="mb-4">Discover how the science of epigenetics is revolutionizing our approach to health. As a wellness consultant serving The Woodlands and the greater North Houston area, I see how personalized diet and lifestyle changes can act as a natural remedy for many of today's health concerns. It’s not just about the genes you were born with; it’s about how your environment and choices influence them.</p>
-          <p class="mb-4">For my clients in Spring, TX, and Pinehurst, the journey often begins with understanding that holistic medicine isn't about a quick fix. It's about creating sustainable habits. Through epigenetic analysis, we can pinpoint specific needs for supplements, design effective meal plans, and even refine your skincare routine. This data-driven approach to natural healing empowers you to take control of your health.</p>
+          <p class="mb-4">Discover how a personalized approach is revolutionizing our path to health. As a wellness consultant serving The Woodlands and the greater North Houston area, I see how individualized diet and lifestyle changes can act as a natural solution for many of today's health concerns. It’s about how your environment and choices influence your well-being.</p>
+          <p class="mb-4">For my clients in Spring, TX, and Pinehurst, the journey often begins with understanding that a holistic approach isn't about a quick fix. It's about creating sustainable habits. Through careful analysis of your goals, we can pinpoint specific needs for supplements, design effective meal plans, and even refine your skincare routine. This data-driven approach to natural health empowers you to take control of your wellness.</p>
           <h3 class="text-2xl font-bold mt-6 mb-4">Your Diet as a Wellness Tool</h3>
-          <p>A generic diet plan doesn't account for your unique biology. Epigenetics allows us to create custom meal plans that support your specific health goals, whether it's boosting energy, improving skin clarity, or managing weight. This is the future of wellness, available right here in the North Houston area.</p>
+          <p>A generic diet plan doesn't account for your unique biology. We work together to create custom meal plans that support your specific health goals, whether it's boosting energy, improving skin clarity, or managing weight. This is the future of wellness, available right here in the North Houston area.</p>
       `,
-      blog_post2_title: "Finding Your Houston Life Coach: A Guide to Holistic Health",
-      blog_post2_snippet: "Navigating the world of wellness can be overwhelming. As a life coach and wellness consultant in Houston, I specialize in holistic medicine and natural healing. My goal is to guide you through the noise and help you find a path that works for you...",
+      blog_post2_title: "Finding Your Houston Wellness Consultant: A Guide to Holistic Health",
+      blog_post2_snippet: "Navigating the world of wellness can be overwhelming. As a wellness consultant in Houston, I specialize in holistic and natural health. My goal is to guide you through the noise and help you find a path that works for you...",
       blog_post2_content: `
-          <p class="mb-4">Navigating the world of wellness can be overwhelming. As a life coach and wellness consultant in Houston, I specialize in holistic medicine and natural healing. My goal is to guide you through the noise and help you find a path that works for you, whether you're in Tomball, Magnolia, or right here in Houston.</p>
-          <p class="mb-4">A life coach does more than just offer advice; we create a partnership to help you achieve your health goals. This includes everything from developing a sustainable diet and supplement strategy to finding a skincare routine that complements your internal health. We look at the whole picture, because true wellness is interconnected.</p>
-          <h3 class="text-2xl font-bold mt-6 mb-4">What is Holistic Medicine?</h3>
-          <p>Holistic medicine treats the body as a whole, integrated system. Instead of just treating symptoms, we look for the root cause. This could mean adjusting your meal plans, recommending specific supplements as a natural remedy, or developing stress-management techniques. It’s a comprehensive approach to long-term health and vitality.</p>
+          <p class="mb-4">Navigating the world of wellness can be overwhelming. As a wellness consultant in Houston, I specialize in holistic and natural health. My goal is to guide you through the noise and help you find a path that works for you, whether you're in Tomball, Magnolia, or right here in Houston.</p>
+          <p class="mb-4">A wellness consultant does more than just offer advice; we create a partnership to help you achieve your health goals. This includes everything from developing a sustainable diet and supplement strategy to finding a skincare routine that complements your internal health. We look at the whole picture, because true wellness is interconnected.</p>
+          <h3 class="text-2xl font-bold mt-6 mb-4">What is a Holistic Approach?</h3>
+          <p>A holistic approach treats the body as a whole, integrated system. Instead of just treating symptoms, we look for the root cause. This could mean adjusting your meal plans, recommending specific supplements as a natural solution, or developing stress-management techniques. It’s a comprehensive approach to long-term health and vitality.</p>
       `,
       blog_post3_title: "Custom Meal Plans for a Healthier You in the North Houston Area",
-      blog_post3_snippet: "Are you tired of diets that don't deliver? As a wellness consultant in the North Houston area, I create scientifically-backed meal plans tailored to your unique epigenetic profile. This isn't just a diet; it's a blueprint for your optimal health...",
+      blog_post3_snippet: "Are you tired of diets that don't deliver? As a wellness consultant in the North Houston area, I create scientifically-backed meal plans tailored to your unique profile. This isn't just a diet; it's a blueprint for your optimal health...",
       blog_post3_content: `
-          <p class="mb-4">Are you tired of diets that don't deliver? As a wellness consultant in the North Houston area, I create scientifically-backed meal plans tailored to your unique epigenetic profile. This isn't just a diet; it's a blueprint for your optimal health, serving clients from Pinehurst to The Woodlands.</p>
-          <p class="mb-4">Your body has unique needs, and a generic meal plan can't address them. We use epigenetic data to understand what your body craves and what it should avoid. This informs the creation of delicious, easy-to-follow meal plans that work in harmony with your genes. We also identify the most effective supplements to support your wellness journey, providing a complete natural healing strategy.</p>
+          <p class="mb-4">Are you tired of diets that don't deliver? As a wellness consultant in the North Houston area, I create scientifically-backed meal plans tailored to your unique profile and goals. This isn't just a diet; it's a blueprint for your optimal health, serving clients from Pinehurst to The Woodlands.</p>
+          <p class="mb-4">Your body has unique needs, and a generic meal plan can't address them. We use your health goals to understand what your body craves and what it should avoid. This informs the creation of delicious, easy-to-follow meal plans that work in harmony with your body. We also identify the most effective supplements to support your wellness journey, providing a complete natural health strategy.</p>
       `,
     }
   },
@@ -110,46 +110,46 @@ const translations = {
       logo_alt: "Logo de Lilly Combest - Consultora de Bienestar en Houston",
 
       // Hero Section
-      hero_title: "Consultora de Bienestar y Life Coach en Houston",
-      hero_subtitle: "Descubre la medicina holística y la sanación natural con Lilly Combest, tu experta consultora de bienestar en The Woodlands, Spring y el área del norte de Houston. Desbloquea tu potencial de salud a través de la epigenética.",
+      hero_title: "Consultora de Bienestar en Houston",
+      hero_subtitle: "Descubre el bienestar holístico y las estrategias de salud natural con Lilly Combest, tu experta consultora de bienestar en The Woodlands, Spring y el área del norte de Houston. Desbloquea el potencial de tu salud a través de una guía personalizada.",
       hero_cta: "Reserva tu Consulta de Bienestar Gratuita",
 
       // About Section
-      about_title: "Tu Coach de Salud y Bienestar en Magnolia, TX",
-      about_p1: "Como una apasionada <strong>Consultora de Bienestar y Life Coach</strong> que sirve a Houston, Magnolia y Tomball, Lilly Combest se dedica a tu viaje de salud personal. Se especializa en integrar la innovadora <strong>epigenética</strong> para ofrecer un enfoque de bienestar verdaderamente personalizado. Esto no es solo otra dieta o remedio; es un camino hacia la vitalidad respaldado por la ciencia.",
-      about_p2: "Su misión es proporcionar una estrategia de sanación natural a través de la <strong>medicina holística</strong>. Lilly te ayuda a comprender cómo tu estilo de vida impacta tus genes, creando planes de comidas personalizados, recomendaciones de suplementos e incluso consejos para el cuidado de la piel. Logra un bienestar duradero con un plan de salud diseñado para ti.",
-      about_p3: "Si estás en Pinehurst, Spring o The Woodlands y buscas un life coach enfocado en la salud holística, descubre cómo Lilly puede guiarte.",
-      about_img_alt: "Lilly Combest - Life Coach para la Sanación Natural",
+      about_title: "Tu Consultora de Salud y Bienestar en Magnolia, TX",
+      about_p1: "Como una apasionada <strong>Consultora de Bienestar</strong> que sirve a Houston, Magnolia y Tomball, Lilly Combest se dedica a tu viaje de salud personal. Se especializa en crear un enfoque de bienestar verdaderamente personalizado basado en tus metas únicas. Esto no es solo otra dieta o solución temporal; es un camino hacia la vitalidad respaldado por la ciencia.",
+      about_p2: "Su misión es proporcionar una estrategia de salud natural a través de un <strong>enfoque holístico</strong>. Lilly te ayuda a comprender cómo tu estilo de vida impacta tu bienestar, creando planes de comidas personalizados, recomendaciones de suplementos e incluso consejos para el cuidado de la piel. Logra un bienestar duradero con un plan de salud diseñado para ti.",
+      about_p3: "Si estás en Pinehurst, Spring o The Woodlands y buscas una consultora enfocada en la salud holística, descubre cómo Lilly puede guiarte.",
+      about_img_alt: "Lilly Combest - Consultora para el Bienestar Natural",
 
       // Services Section
       services_title: "Servicios de Bienestar Holístico",
-      service1_title: "Planes de Comidas y Coaching de Dieta Personalizados",
-      service1_desc: "Planes de dieta y comidas personalizados basados en tu perfil epigenético para optimizar tu salud y bienestar. Un remedio natural para una vida mejor.",
-      service2_title: "Análisis de Epigenética y Salud",
-      service2_desc: "Analizamos tu expresión genética única para proporcionar información sobre tu salud, guiando la elección de suplementos y ajustes de estilo de vida.",
+      service1_title: "Planes de Comidas y Asesoramiento Nutricional Personalizados",
+      service1_desc: "Planes de dieta y comidas personalizados basados en tu perfil único para optimizar tu salud y bienestar. Un enfoque natural para una vida mejor.",
+      service2_title: "Análisis de Salud Personalizado",
+      service2_desc: "Analizamos tu estilo de vida y metas para proporcionar información sobre tu salud, guiando la elección de suplementos y ajustes de estilo de vida.",
       service3_title: "Soluciones Holísticas para el Cuidado de la Piel",
       service3_desc: "Logra una piel radiante desde adentro. Ofrecemos orientación sobre el cuidado de la piel y suplementos que se alinean con las necesidades de tu cuerpo.",
-      service4_title: "Life Coach para la Sanación Natural",
-      service4_desc: "Adopta la medicina holística con una life coach que te guía a través de técnicas de sanación natural para el bienestar de la mente y el cuerpo.",
+      service4_title: "Guía para la Salud Natural",
+      service4_desc: "Adopta un enfoque holístico con una consultora que te guía a través de técnicas naturales para el bienestar de la mente y el cuerpo.",
       service5_title: "Bienestar Corporativo (Norte de Houston)",
       service5_desc: "Servicios de consultoría de bienestar para empresas en The Woodlands, Spring y Tomball para impulsar la salud y productividad de los empleados.",
       service6_title: "Estrategia y Guía de Suplementos",
-      service6_desc: "Deja de adivinar qué suplementos tomar. Obtén un remedio y un plan personalizados basados en datos científicos para una salud óptima.",
+      service6_desc: "Deja de adivinar qué suplementos tomar. Obtén un plan personalizado basado en tus metas de bienestar para una salud óptima.",
 
       // Testimonials Section
       testimonials_title: "Historias de Bienestar de Clientes",
-      testimonial1_quote: "¡Lilly es la mejor consultora de bienestar en Houston! Su enfoque de life coach combinado con la epigenética cambió mi salud. Los planes de comidas fueron un remedio perfecto para mi fatiga.",
+      testimonial1_quote: "¡Lilly es la mejor consultora de bienestar en Houston! Su enfoque personalizado cambió mi salud. Los planes de comidas fueron una solución perfecta para mi fatiga.",
       testimonial1_author: "Sarah J., The Woodlands, TX",
-      testimonial2_quote: "Encontré a Lilly buscando medicina holística en Spring. Su filosofía de sanación natural y su guía sobre dieta y suplementos han sido invaluables.",
+      testimonial2_quote: "Encontré a Lilly buscando bienestar holístico en Spring. Su filosofía de salud natural y su guía sobre dieta y suplementos han sido invaluables.",
       testimonial2_author: "Mark D., Spring, TX",
-      testimonial3_quote: "Como life coach, Lilly es increíble. Me ayudó con una nueva dieta, rutina de cuidado de la piel y suplementos. Recomiendo encarecidamente sus servicios de bienestar en el área de Tomball.",
+      testimonial3_quote: "Lilly es una consultora de bienestar increíble. Me ayudó con una nueva dieta, rutina de cuidado de la piel y suplementos. Recomiendo encarecidamente sus servicios en el área de Tomball.",
       testimonial3_author: "Emily R., Tomball, TX",
-      testimonial4_quote: "Los planes de comidas personalizados y los conocimientos de salud de las pruebas epigenéticas fueron un antes y un después. Una consultora de bienestar de primer nivel para el área del norte de Houston.",
+      testimonial4_quote: "Los planes de comidas personalizados y los conocimientos de salud fueron un antes y un después. Una consultora de bienestar de primer nivel para el área del norte de Houston.",
       testimonial4_author: "David L., Houston, TX",
 
       // Contact Section
       contact_title: "Contacta a tu Consultora de Bienestar en Houston",
-      contact_intro: "Ready to begin your natural healing journey? Contact Lilly, your life coach for wellness in Houston, The Woodlands, Magnolia, Tomball, Spring, Pinehurst, and the entire North Houston area.",
+      contact_intro: "¿Lista para comenzar tu viaje de salud natural? Contacta a Lilly, tu consultora de bienestar para Houston, The Woodlands, Magnolia, Tomball, Spring, Pinehurst y toda el área del norte de Houston.",
       contact_name: "Nombre",
       contact_email: "Correo Electrónico",
       contact_message: "Mensaje",
@@ -162,7 +162,7 @@ const translations = {
       contact_success_close: "¡Entendido!",
 
       // Footer
-      footer_copyright: "© 2025 Lilly Combest | Consultora de Bienestar y Life Coach | Houston, TX",
+      footer_copyright: "© 2025 Lilly Combest | Consultora de Bienestar | Houston, TX",
       footer_privacy: "Política de Privacidad",
       footer_terms: "Términos de Servicio",
       
@@ -170,27 +170,27 @@ const translations = {
       blog_title: "Blog de Bienestar y Salud",
       blog_back_button: "← Volver al Blog",
       blog_read_more: "Leer Más →",
-      blog_post1_title: "El Poder de la Epigenética: Un Remedio Natural para el Bienestar en The Woodlands",
-      blog_post1_snippet: "Descubre cómo la ciencia de la epigenética está revolucionando nuestro enfoque de la salud. Como consultora de bienestar que sirve a The Woodlands y el área metropolitana del norte de Houston, veo cómo la dieta y los cambios de estilo de vida personalizados pueden actuar como un remedio natural...",
+      blog_post1_title: "El Poder de la Nutrición Personalizada: Un Enfoque Natural para el Bienestar en The Woodlands",
+      blog_post1_snippet: "Descubre cómo un enfoque personalizado de la salud está revolucionando el bienestar. Como consultora de bienestar que sirve a The Woodlands y el área metropolitana del norte de Houston, veo cómo la dieta y los cambios de estilo de vida personalizados pueden ser una solución natural...",
       blog_post1_content: `
-          <p class="mb-4">Descubre cómo la ciencia de la epigenética está revolucionando nuestro enfoque de la salud. Como consultora de bienestar que sirve a The Woodlands y el área metropolitana del norte de Houston, veo cómo la dieta y los cambios de estilo de vida personalizados pueden actuar como un remedio natural para muchas de las preocupaciones de salud actuales. No se trata solo de los genes con los que naciste; se trata de cómo tu entorno y tus elecciones influyen en ellos.</p>
-          <p class="mb-4">Para mis clientes en Spring, TX y Pinehurst, el viaje a menudo comienza con la comprensión de que la medicina holística no es una solución rápida. Se trata de crear hábitos sostenibles. A través del análisis epigenético, podemos identificar necesidades específicas de suplementos, diseñar planes de comidas efectivos e incluso refinar tu rutina de cuidado de la piel. Este enfoque basado en datos para la sanación natural te empodera para tomar el control de tu salud.</p>
+          <p class="mb-4">Descubre cómo un enfoque personalizado está revolucionando nuestro camino hacia la salud. Como consultora de bienestar que sirve a The Woodlands y el área metropolitana del norte de Houston, veo cómo los cambios individualizados en la dieta y el estilo de vida pueden actuar como una solución natural para muchas de las preocupaciones de salud actuales. Se trata de cómo tu entorno y tus elecciones influyen en tu bienestar.</p>
+          <p class="mb-4">Para mis clientes en Spring, TX y Pinehurst, el viaje a menudo comienza con la comprensión de que un enfoque holístico no es una solución rápida. Se trata de crear hábitos sostenibles. A través de un análisis cuidadoso de tus metas, podemos identificar necesidades específicas de suplementos, diseñar planes de comidas efectivos e incluso refinar tu rutina de cuidado de la piel. Este enfoque basado en datos para la salud natural te empodera para tomar el control de tu bienestar.</p>
           <h3 class="text-2xl font-bold mt-6 mb-4">Tu Dieta como Herramienta de Bienestar</h3>
-          <p>Un plan de dieta genérico no tiene en cuenta tu biología única. La epigenética nos permite crear planes de comidas personalizados que apoyan tus objetivos de salud específicos, ya sea aumentar la energía, mejorar la claridad de la piel o controlar el peso. Este es el futuro del bienestar, disponible aquí mismo en el área del norte de Houston.</p>
+          <p>Un plan de dieta genérico no tiene en cuenta tu biología única. Trabajamos juntos para crear planes de comidas personalizados que apoyen tus objetivos de salud específicos, ya sea aumentar la energía, mejorar la claridad de la piel o controlar el peso. Este es el futuro del bienestar, disponible aquí mismo en el área del norte de Houston.</p>
       `,
-      blog_post2_title: "Encontrando a tu Life Coach en Houston: Una Guía para la Salud Holística",
-      blog_post2_snippet: "Navegar por el mundo del bienestar puede ser abrumador. Como life coach y consultora de bienestar en Houston, me especializo en medicina holística y sanación natural. Mi objetivo es guiarte a través del ruido y ayudarte a encontrar un camino que funcione para ti...",
+      blog_post2_title: "Encontrando a tu Consultora de Bienestar en Houston: Una Guía para la Salud Holística",
+      blog_post2_snippet: "Navegar por el mundo del bienestar puede ser abrumador. Como consultora de bienestar en Houston, me especializo en salud holística y natural. Mi objetivo es guiarte a través del ruido y ayudarte a encontrar un camino que funcione para ti...",
       blog_post2_content: `
-          <p class="mb-4">Navegar por el mundo del bienestar puede ser abrumador. Como life coach y consultora de bienestar en Houston, me especializo en medicina holística y sanación natural. Mi objetivo es guiarte a través del ruido y ayudarte a encontrar un camino que funcione para ti, ya sea que estés en Tomball, Magnolia o aquí mismo en Houston.</p>
-          <p class="mb-4">Un life coach hace más que solo ofrecer consejos; creamos una asociación para ayudarte a alcanzar tus metas de salud. Esto incluye todo, desde desarrollar una dieta sostenible y una estrategia de suplementos hasta encontrar una rutina de cuidado de la piel que complemente tu salud interna. Miramos el panorama completo, porque el verdadero bienestar está interconectado.</p>
-          <h3 class="text-2xl font-bold mt-6 mb-4">¿Qué es la Medicina Holística?</h3>
-          <p>La medicina holística trata el cuerpo como un sistema completo e integrado. En lugar de solo tratar los síntomas, buscamos la causa raíz. Esto podría significar ajustar tus planes de comidas, recomendar suplementos específicos como remedio natural o desarrollar técnicas de manejo del estrés. Es un enfoque integral para la salud y la vitalidad a largo plazo.</p>
+          <p class="mb-4">Navegar por el mundo del bienestar puede ser abrumador. Como consultora de bienestar en Houston, me especializo en salud holística y natural. Mi objetivo es guiarte a través del ruido y ayudarte a encontrar un camino que funcione para ti, ya sea que estés en Tomball, Magnolia o aquí mismo en Houston.</p>
+          <p class="mb-4">Una consultora de bienestar hace más que solo ofrecer consejos; creamos una asociación para ayudarte a alcanzar tus metas de salud. Esto incluye todo, desde desarrollar una dieta sostenible y una estrategia de suplementos hasta encontrar una rutina de cuidado de la piel que complemente tu salud interna. Miramos el panorama completo, porque el verdadero bienestar está interconectado.</p>
+          <h3 class="text-2xl font-bold mt-6 mb-4">¿Qué es un Enfoque Holístico?</h3>
+          <p>Un enfoque holístico trata el cuerpo como un sistema completo e integrado. En lugar de solo tratar los síntomas, buscamos la causa raíz. Esto podría significar ajustar tus planes de comidas, recomendar suplementos específicos como solución natural o desarrollar técnicas de manejo del estrés. Es un enfoque integral para la salud y la vitalidad a largo plazo.</p>
       `,
       blog_post3_title: "Planes de Comidas Personalizados para un Tú Más Saludable en el Área del Norte de Houston",
-      blog_post3_snippet: "¿Estás cansado de las dietas que no funcionan? Como consultora de bienestar en el área del norte de Houston, creo planes de comidas respaldados por la ciencia y adaptados a tu perfil epigenético único. Esto no es solo una dieta; es un plan para tu salud óptima...",
+      blog_post3_snippet: "¿Estás cansado de las dietas que no funcionan? Como consultora de bienestar en el área del norte de Houston, creo planes de comidas respaldados por la ciencia y adaptados a tu perfil único. Esto no es solo una dieta; es un plan para tu salud óptima...",
       blog_post3_content: `
-          <p class="mb-4">¿Estás cansado de las dietas que no funcionan? Como consultora de bienestar en el área del norte de Houston, creo planes de comidas respaldados por la ciencia y adaptados a tu perfil epigenético único. Esto no es solo una dieta; es un plan para tu salud óptima, sirviendo a clientes desde Pinehurst hasta The Woodlands.</p>
-          <p class="mb-4">Tu cuerpo tiene necesidades únicas, y un plan de comidas genérico no puede abordarlas. Usamos datos epigenéticos para entender lo que tu cuerpo anhela y lo que debe evitar. Esto informa la creación de planes de comidas deliciosos y fáciles de seguir que funcionan en armonía con tus genes. También identificamos los suplementos más efectivos para apoyar tu viaje de bienestar, proporcionando una estrategia completa de sanación natural.</p>
+          <p class="mb-4">¿Estás cansado de las dietas que no funcionan? Como consultora de bienestar en el área del norte de Houston, creo planes de comidas respaldados por la ciencia y adaptados a tu perfil y metas únicas. Esto no es solo una dieta; es un plan para tu salud óptima, sirviendo a clientes desde Pinehurst hasta The Woodlands.</p>
+          <p class="mb-4">Tu cuerpo tiene necesidades únicas, y un plan de comidas genérico no puede abordarlas. Usamos tus metas de salud para entender lo que tu cuerpo anhela y lo que debe evitar. Esto informa la creación de planes de comidas deliciosos y fáciles de seguir que funcionan en armonía con tu cuerpo. También identificamos los suplementos más efectivos para apoyar tu viaje de bienestar, proporcionando una estrategia completa de salud natural.</p>
       `,
     }
   }
@@ -485,7 +485,7 @@ const TestimonialsSection = () => {
 
 const ContactSection = () => {
     const { t } = useTranslation();
-    const [state, handleSubmit] = useForm("xzzapyen"); // <-- UPDATED ID
+    const [state, handleSubmit] = useForm("xzzapyen");
 
     if (state.succeeded) {
         return (
@@ -560,6 +560,6 @@ export default function App() {
     return (
         <LanguageProvider>
             <AppInternal />
-        </LanguageProvider>
+        </Language-Provider>
     );
 }
