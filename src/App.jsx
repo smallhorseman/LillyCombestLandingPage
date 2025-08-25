@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext, createContext } from 'react';
+import { useForm } from '@formspree/react';
 
 // --- TRANSLATION CONFIGURATION ---
 // All text content for both languages is stored here.
@@ -62,7 +63,7 @@ const translations = {
       contact_message_placeholder: "Tell me about your health and wellness goals...",
       contact_submit: "Send Message",
       contact_connect: "Or connect with your wellness consultant directly:",
-      contact_success_message: "Thank you for your message! Lilly will get back to you soon.",
+      contact_success_message: "Thank you for your message!",
       contact_success_close: "Got It!",
 
       // Footer
@@ -157,7 +158,7 @@ const translations = {
       contact_message_placeholder: "Cuéntame sobre tus metas de salud y bienestar...",
       contact_submit: "Enviar Mensaje",
       contact_connect: "O conéctate directamente con tu consultora de bienestar:",
-      contact_success_message: "¡Gracias por tu mensaje! Lilly se pondrá en contacto contigo pronto.",
+      contact_success_message: "¡Gracias por tu mensaje!",
       contact_success_close: "¡Entendido!",
 
       // Footer
@@ -484,19 +485,20 @@ const TestimonialsSection = () => {
 
 const ContactSection = () => {
     const { t } = useTranslation();
-    const [showAlert, setShowAlert] = useState(false);
-    const [alertMessage, setAlertMessage] = useState("");
+    const [state, handleSubmit] = useForm("xzzapyen"); // <-- UPDATED ID
 
-    const showCustomAlert = (message) => {
-        setAlertMessage(message);
-        setShowAlert(true);
-    };
-    
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        showCustomAlert(t('contact_success_message'));
-        e.target.reset();
-    };
+    if (state.succeeded) {
+        return (
+            <section id="contact" className="py-16 md:py-24 bg-stone-100">
+                <div className="container mx-auto px-4 max-w-3xl text-center">
+                    <div className="bg-white p-12 rounded-lg shadow-xl border-t-4 border-rose-300">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-stone-900">{t('contact_success_message')}</h2>
+                        <p className="text-lg text-stone-700">Lilly will get back to you soon.</p>
+                    </div>
+                </div>
+            </section>
+        );
+    }
 
     return (
         <section id="contact" className="py-16 md:py-24 bg-stone-100">
@@ -504,7 +506,7 @@ const ContactSection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-stone-900">{t('contact_title')}</h2>
                 <div className="bg-white p-8 rounded-lg shadow-xl border-t-4 border-rose-300">
                     <p className="text-center text-lg mb-8 text-stone-700">{t('contact_intro')}</p>
-                    <form onSubmit={handleFormSubmit} className="space-y-6">
+                    <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-stone-700">{t('contact_name')}</label>
                             <input type="text" id="name" name="name" className="mt-1 block w-full px-4 py-2 border border-stone-300 rounded-md shadow-sm focus:ring-rose-500 focus:border-rose-500 sm:text-sm" placeholder={t('contact_name_placeholder')} required />
@@ -518,7 +520,13 @@ const ContactSection = () => {
                             <textarea id="message" name="message" rows="5" className="mt-1 block w-full px-4 py-2 border border-stone-300 rounded-md shadow-sm focus:ring-rose-500 focus:border-rose-500 sm:text-sm" placeholder={t('contact_message_placeholder')} required></textarea>
                         </div>
                         <div className="text-center">
-                            <button type="submit" className="bg-rose-500 text-white hover:bg-rose-600 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">{t('contact_submit')}</button>
+                             <button 
+                                type="submit" 
+                                disabled={state.submitting} 
+                                className="bg-rose-500 text-white hover:bg-rose-600 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out disabled:bg-stone-400 disabled:cursor-not-allowed"
+                            >
+                                {state.submitting ? 'Sending...' : t('contact_submit')}
+                            </button>
                         </div>
                     </form>
                     <div className="mt-8 text-center text-stone-600">
@@ -528,14 +536,6 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            {showAlert && (
-                <div className="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center z-50">
-                    <div className="bg-white p-8 rounded-lg shadow-xl max-w-sm w-full text-center">
-                        <p className="text-xl font-semibold mb-4 text-stone-800">{alertMessage}</p>
-                        <button onClick={() => setShowAlert(false)} className="bg-rose-500 text-white hover:bg-rose-600 font-bold py-2 px-6 rounded-full transition duration-300">{t('contact_success_close')}</button>
-                    </div>
-                </div>
-            )}
         </section>
     );
 };
